@@ -1,0 +1,217 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+h1 {
+		font-size: 42px;
+		font-weight: 500;
+		margin-bottom: 15px;
+}
+
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	position: relative;
+}
+
+a:visited {
+	color: #2a7ae2;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+/* Header Start */
+
+.nav {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 2px solid #000;
+}
+
+.nav a {
+	color: #000;
+}
+
+.nav__title {	
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.nav__item {
+	font-size: 16px;
+}
+
+.nav__item:first-child {
+	margin-right: 20px;
+}
+
+/* Header End */
+
+/* Main Start */
+
+.main {
+	padding: 30px 0;
+	flex: 1 1 auto;
+}
+
+.main__title {
+	font-size: 30px;
+}
+
+.post {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.post__link {
+	color: #2a7ae2;
+	font-size: 20px;
+}
+
+.post__date {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.post__date:before {
+	content: "•";
+}
+
+/* Main End */
+
+/* Footer Start */
+
+.footer__links {
+	padding: 10px 0;
+	border-top: 2px solid #000;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.footer__link {
+	display: flex;
+	color: #2a7ae2;
+	align-items: center;
+}
+
+.link__ico {
+	margin-right: 10px;
+}
+
+/* Footer End */
+
+/* Post Start */
+
+.post__data {
+	color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 15px;
+}
+
+/* Post End */
+
+/* About Start */
+
+.about__subtitle {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.about__data {
+	font-size: 18px;
+	line-height:22px;
+}
+
+/* About End */
+
+/* Portfolio Start */
+
+.project {
+	margin-bottom: 15px;
+}
+
+.project__title {
+	font-size: 22px;
+	margin-right: 10px;
+	margin-bottom: 8px;
+}
+
+.project__name {
+	display: flex;
+	align-items: center;
+}
+
+.project__status {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.project__desc {
+	font-size: 18px;
+}
+
+/* Portfolio End */

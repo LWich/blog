@@ -1,0 +1,6 @@
+Flask==2.3.2
+Flask-FlatPages==0.8.1
+Pygments==2.15.1
+Markdown==3.4.3
+#asgiref==3.7.2
+PyYAML==6.0

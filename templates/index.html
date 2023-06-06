@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Ilya Strelchenya - blog{% endblock %}
+
+{% block content %}
+<h2 class="main__title">Posts</h2>
+{% for post in posts %}
+	<div class="post">
+	<a class="post__link" href="{{ url_for('post', post_name=post.path.replace('posts/', '')) }}">{{ post.title }}</a><span class="post__date">{{ post.date }}</span>
+	</div>
+{% endfor %}
+{% endblock %}

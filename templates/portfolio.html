@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+	<h1>Projects</h1>
+	{% if projects %}
+		{% for project in projects %}
+			<div class="project">
+				<div class="project__name">
+					<a href="{{ project.url }}" class="project__title">{{ project.title }}</a>
+					<span class="project__status">{{ project.status }}</span>
+				</div>
+				<p class="project__desc">{{ project.description }}</p>
+			</div>
+		{% endfor %}
+	{% else %}
+		<p class="project__title">Still nothing here :(</p>
+	{% endif %}
+{% endblock %}
